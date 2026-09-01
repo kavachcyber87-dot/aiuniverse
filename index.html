@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Universe PRO - Digital Bundles & AI Store</title>
+  <style>
+    :root {
+      --bg: #070a13;
+      --card-bg: #0f172a;
+      --card-border: #1e293b;
+      --accent: #38bdf8;
+      --accent-green: #10b981;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 12px; line-height: 1.5; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header { text-align: center; margin: 20px 0; }
+    h1 { font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #38bdf8, #818cf8, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    p.sub { color: var(--muted); font-size: 0.95rem; margin-top: 5px; }
+
+    /* Direct Earning Store Section */
+    .store-head { font-size: 1.3rem; font-weight: 800; margin: 25px 0 15px; color: #fff; text-align: center; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 35px; }
+    .product-card { background: linear-gradient(145deg, #111c38, #0b1329); border: 2px solid #38bdf8; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 25px rgba(56, 189, 248, 0.15); position: relative; }
+    .hot-badge { position: absolute; top: -10px; right: 15px; background: #ec4899; color: #fff; font-size: 0.7rem; font-weight: 800; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; }
+    .product-card h3 { font-size: 1.15rem; color: #fff; margin-bottom: 8px; }
+    .product-card p { font-size: 0.85rem; color: var(--muted); margin-bottom: 15px; }
+    .features-list { list-style: none; font-size: 0.8rem; color: #cbd5e1; margin-bottom: 18px; }
+    .features-list li { margin-bottom: 6px; }
+    .features-list li::before { content: "✔ "; color: var(--accent-green); font-weight: bold; }
+    .price-tag { font-size: 1.4rem; font-weight: 900; color: #38bdf8; margin-bottom: 12px; }
+    .price-tag span { font-size: 0.85rem; color: #64748b; text-decoration: line-through; margin-left: 6px; }
+    .buy-btn { display: block; text-align: center; background: linear-gradient(135deg, #10b981, #059669); color: #fff; padding: 12px; border-radius: 10px; font-weight: 800; text-decoration: none; font-size: 0.95rem; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); }
+    .buy-btn:hover { opacity: 0.95; }
+
+    /* Search & Tools */
+    .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px; }
+    .search-box input { width: 100%; padding: 14px 18px; border-radius: 12px; background: var(--card-bg); border: 1px solid var(--card-border); color: #fff; font-size: 0.95rem; outline: none; }
+    .category-pills { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none; }
+    .category-pills::-webkit-scrollbar { display: none; }
+    .pill { padding: 8px 16px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 20px; color: var(--muted); font-size: 0.85rem; cursor: pointer; white-space: nowrap; font-weight: 600; }
+    .pill.active, .pill:hover { background: #1e293b; color: var(--accent); border-color: var(--accent); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; }
+    .card-top { display: flex; justify-content: space-between; margin-bottom: 8px; }
+    .card-title { font-size: 1.05rem; font-weight: 700; color: #fff; }
+    .badge { font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
+    .badge-Free { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); }
+    .badge-Freemium { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+    .card-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 14px; }
+    .launch-btn { text-align: center; background: #0284c7; color: #fff; padding: 10px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 700; display: block; }
+
+    footer { margin-top: 50px; text-align: center; padding: 20px 0; border-top: 1px solid var(--card-border); color: #64748b; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Universe PRO</h1>
+      <p class="sub">Instant Digital Bundles, Viral Automation & Curated AI Tools</p>
+    </header>
+
+    <!-- Direct Money Making Bundles -->
+    <div class="store-head">🔥 Instant Download Digital Bundles (Direct PhonePe Delivery)</div>
+    <div class="products-grid">
+      
+      <!-- Product 1 -->
+      <div class="product-card">
+        <span class="hot-badge">Best Seller</span>
+        <div>
+          <h3>🎬 5,000+ Ready AI Reels Bundle</h3>
+          <p>Ready-to-upload viral faceless videos for Instagram & YouTube Shorts.</p>
+          <ul class="features-list">
+            <li>No watermark, full 1080p 9:16 format</li>
+            <li>Motivational, Tech Hacks & Facts niches</li>
+            <li>Direct Google Drive instant access</li>
+          </ul>
+        </div>
+        <div>
+          <div class="price-tag">₹299 <span>₹1,999</span></div>
+          <a href="upi://pay?pa=8500550495@ybl&pn=AIUniversePRO&am=299&cu=INR&tn=5000ReelsBundle" class="buy-btn">⚡ Buy via PhonePe / UPI (₹299)</a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div>
+          <h3>⚡ 1,000+ Master Prompts Bank</h3>
+          <p>Copy-paste prompts for ChatGPT, Claude & Midjourney to monetize skills.</p>
+          <ul class="features-list">
+            <li>Client website & landing page prompts</li>
+            <li>Viral copywriting & ad scripts</li>
+            <li>Midjourney photorealistic art codes</li>
+          </ul>
+        </div>
+        <div>
+          <div class="price-tag">₹199 <span>₹999</span></div>
+          <a href="upi://pay?pa=8500550495@ybl&pn=AIUniversePRO&am=199&cu=INR&tn=PromptsBank" class="buy-btn">⚡ Buy via PhonePe / UPI (₹199)</a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" style="border-color: #ec4899;">
+        <span class="hot-badge" style="background:#8b5cf6;">All-In-One VIP</span>
+        <div>
+          <h3>🚀 Master Lifetime VIP Pass</h3>
+          <p>Get all bundles + secret monetization blueprints & private tools vault.</p>
+          <ul class="features-list">
+            <li>Everything in Reels Bundle + Prompts Bank</li>
+            <li>YouTube Automation Video Course (PDF/Links)</li>
+            <li>Priority VIP community access</li>
+          </ul>
+        </div>
+        <div>
+          <div class="price-tag">₹499 <span>₹4,999</span></div>
+          <a href="upi://pay?pa=8500550495@ybl&pn=AIUniversePRO&am=499&cu=INR&tn=LifetimeVIPPass" class="buy-btn" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">⚡ Unlock VIP Pass via PhonePe (₹499)</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Free Tools Directory -->
+    <div class="store-head">⚡ Free AI Tools Directory</div>
+    <div class="controls">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search AI tools (Video, Audio, LLM, Coding)..." onkeyup="filterTools()">
+      </div>
+      <div class="category-pills">
+        <button class="pill active" onclick="setCategory('All', this)">All Tools</button>
+        <button class="pill" onclick="setCategory('Video AI', this)">Video AI</button>
+        <button class="pill" onclick="setCategory('Image Gen', this)">Image Gen</button>
+        <button class="pill" onclick="setCategory('Voice & Audio', this)">Voice & Audio</button>
+        <button class="pill" onclick="setCategory('LLM & Chat', this)">LLM & Chat</button>
+        <button class="pill" onclick="setCategory('Coding & Dev', this)">Coding & Dev</button>
+      </div>
+    </div>
+
+    <div class="grid" id="toolsGrid"></div>
+
+    <footer>
+      <p>© 2026 AI Universe PRO. Verified Merchant Portal.</p>
+    </footer>
+  </div>
+
+  <script>
+    const tools = [
+      { name: "Runway Gen-2", cat: "Video AI", tag: "Freemium", desc: "Text to 4K cinematic AI video generator.", link: "https://runwayml.com" },
+      { name: "CapCut AI", cat: "Video AI", tag: "Free", desc: "Smart video editor with auto kinetic subtitles.", link: "https://www.capcut.com" },
+      { name: "ElevenLabs", cat: "Voice & Audio", tag: "Freemium", desc: "Hyper-realistic voice cloning and speech synthesis.", link: "https://elevenlabs.io" },
+      { name: "Midjourney", cat: "Image Gen", tag: "Freemium", desc: "Photorealistic AI art and graphics generator.", link: "https://midjourney.com" },
+      { name: "Claude 3.5", cat: "LLM & Chat", tag: "Freemium", desc: "Top-tier coding, logic, and writing intelligence.", link: "https://claude.ai" },
+      { name: "ChatGPT", cat: "LLM & Chat", tag: "Freemium", desc: "Conversational assistant for daily workflows.", link: "https://chat.openai.com" },
+      { name: "Opus Clip", cat: "Video AI", tag: "Freemium", desc: "Converts long podcasts into 30s viral clips.", link: "https://opus.pro" },
+      { name: "Cursor IDE", cat: "Coding & Dev", tag: "Freemium", desc: "AI code editor that writes entire software projects.", link: "https://cursor.com" },
+      { name: "Gamma App", cat: "LLM & Chat", tag: "Freemium", desc: "Creates full presentation slides in 30 seconds.", link: "https://gamma.app" }
+    ];
+
+    let currentCategory = 'All';
+
+    function renderTools(list) {
+      const grid = document.getElementById('toolsGrid');
+      grid.innerHTML = '';
+      list.forEach(t => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <div>
+            <div class="card-top">
+              <span class="card-title">${t.name}</span>
+              <span class="badge badge-${t.tag}">${t.tag}</span>
+            </div>
+            <p class="card-desc">${t.desc}</p>
+          </div>
+          <a href="${t.link}" target="_blank" class="launch-btn">Launch Tool ↗</a>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function setCategory(cat, el) {
+      currentCategory = cat;
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+      filterTools();
+    }
+
+    function filterTools() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = tools.filter(t => {
+        const matchesCat = currentCategory === 'All' || t.cat === currentCategory;
+        const matchesSearch = t.name.toLowerCase().includes(q) || t.desc.toLowerCase().includes(q);
+        return matchesCat && matchesSearch;
+      });
+      renderTools(filtered);
+    }
+
+    renderTools(tools);
+  </script>
+</body>
+</html>
